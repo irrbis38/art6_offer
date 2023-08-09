@@ -33,16 +33,44 @@ body {
   & * {
     box-sizing: border-box;
   }
+
+  @include xl {
+    background-image: url("../images/offer-bg-1366.png");
+  }
+
+  @include lg {
+    padding: 88px 0;
+  }
+
+  @include md {
+    padding: 59px 0 0 0;
+  }
 }
 
 .offer__container {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @include xl {
+    max-width: 1310px;
+  }
+
+  @include lg {
+    max-width: 1054px;
+  }
+
+  @include md {
+    max-width: 960px;
+  }
+
+  @include sm {
+    max-width: 798px;
+  }
 }
 
 .offer__title {
-  margin: 0 0 35px -3px;
+  margin: 0 0 55px -3px;
   color: #111;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Montserrat", sans-serif;
@@ -56,13 +84,47 @@ body {
     width: 100%;
     color: #ec653c;
   }
+
+  @include xl {
+    margin-bottom: 67px;
+    font-size: 45px;
+  }
+
+  @include lg {
+    margin-bottom: 62px;
+    font-size: 42px;
+  }
+
+  @include md {
+    margin-bottom: 47px;
+    font-size: 34px;
+  }
 }
 
 .offer__list {
   display: grid;
   grid-template-columns: 508px 551px;
-  gap: 5px 41px;
-  margin-bottom: 90px;
+  gap: 40px 41px;
+  margin-bottom: 97px;
+
+  @include xl {
+    max-width: 1010px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 33px;
+    margin-bottom: 93px;
+  }
+
+  @include lg {
+    gap: 36px 25px;
+    margin-bottom: 120px;
+  }
+
+  @include md {
+    max-width: 56%;
+    grid-template-columns: 1fr;
+    gap: 35px 0;
+    margin-bottom: 73px;
+  }
 }
 
 .offer__item {
@@ -70,6 +132,10 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 0 29px;
+
+  @include md {
+    gap: 0 27px;
+  }
 }
 
 .offer__image {
@@ -86,22 +152,59 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+  @include xl {
+    transform: translateY(-5px);
+  }
+
+  @include md {
+    width: 75px;
+    height: 75px;
+    transform: translateY(0);
+  }
 }
 
 .offer__text {
+  margin: 0;
   color: #111;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 136.023%;
+
+  @include xl {
+    font-size: 20px;
+  }
+
+  @include lg {
+    font-size: 19px;
+  }
+
+  @include md {
+    font-size: 18px;
+  }
 }
 
 .backlink {
-  max-width: 907px;
+  width: max-content;
   padding: 43px 81px 47px;
   border-radius: 8px;
   background: #ec653c;
+
+  @include xl {
+    padding: 45px 61px 47px 61px;
+  }
+
+  @include lg {
+    padding: 43px 40px 47px 40px;
+  }
+
+  @include md {
+    width: 100%;
+    padding: 37px;
+    padding-bottom: 44px;
+  }
 }
 
 .backlink__title {
@@ -112,6 +215,14 @@ body {
   font-size: 28px;
   font-weight: 700;
   line-height: 87.023%;
+
+  @include lg {
+    font-size: 26px;
+  }
+
+  @include md {
+    font-size: 24px;
+  }
 }
 
 .backlink__subtitle {
@@ -122,12 +233,24 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 53.023%;
+
+  @include lg {
+    font-size: 16px;
+  }
+
+  @include md {
+    margin: 0 0 43px 0;
+  }
 }
 
 .backlink__form {
   display: flex;
   gap: 25px;
   margin-bottom: 32px;
+
+  @include lg {
+    gap: 17px;
+  }
 }
 
 .backlink__input,
@@ -150,6 +273,14 @@ body {
   &:focus {
     border: 1px solid #fcfcfc;
   }
+
+  @include lg {
+    width: 210px;
+  }
+
+  @include md {
+    width: 220px;
+  }
 }
 
 .backlink__input,
@@ -160,6 +291,10 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 98.023%;
+
+  @include md {
+    font-size: 15px;
+  }
 }
 
 .backlink__submit {
@@ -174,6 +309,14 @@ body {
   font-weight: 700;
   line-height: 98.023%;
   text-transform: uppercase;
+
+  @include lg {
+    padding: 17px 49px 15px;
+  }
+
+  @include md {
+    padding: 17px 70px 15px;
+  }
 }
 
 .backlink__confirm {
