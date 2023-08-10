@@ -45,9 +45,14 @@ body {
   @include sm {
     padding: 59px 0 0 0;
   }
+
+  @include xs {
+    padding: 38px 0 0 0;
+  }
 }
 
 .offer__container {
+  width: 100%;
   max-width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
@@ -66,6 +71,10 @@ body {
 
   @include sm {
     max-width: 798px;
+  }
+
+  @include xxs {
+    padding: 0;
   }
 }
 
@@ -99,6 +108,16 @@ body {
     margin-bottom: 47px;
     font-size: 34px;
   }
+
+  @include xs {
+    font-size: 27px;
+    line-height: 116.523%;
+  }
+
+  @include xxs {
+    margin-bottom: 38px;
+    padding: 0 15px;
+  }
 }
 
 .offer__list {
@@ -125,6 +144,17 @@ body {
     gap: 35px 0;
     margin-bottom: 73px;
   }
+
+  @include xs {
+    max-width: 62%;
+  }
+
+  @include xxs {
+    max-width: 100%;
+    gap: 26px 0;
+    margin-bottom: 57px;
+    padding: 0 15px;
+  }
 }
 
 .offer__item {
@@ -135,6 +165,10 @@ body {
 
   @include sm {
     gap: 0 27px;
+  }
+
+  @include xs {
+    gap: 14px;
   }
 }
 
@@ -162,6 +196,11 @@ body {
     height: 75px;
     transform: translateY(0);
   }
+
+  @include xxs {
+    width: 62px;
+    height: 62px;
+  }
 }
 
 .offer__text {
@@ -184,6 +223,10 @@ body {
   @include sm {
     font-size: 18px;
   }
+
+  @include xs {
+    font-size: 15px;
+  }
 }
 
 .backlink {
@@ -205,10 +248,14 @@ body {
     padding: 37px;
     padding-bottom: 44px;
   }
+
+  @include xs {
+    padding: 31px 15px 35px;
+  }
 }
 
 .backlink__title {
-  margin: 0 0 17px 0;
+  margin: 0 0 13px 0;
   color: #fcfcfc;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Montserrat", sans-serif;
@@ -223,23 +270,34 @@ body {
   @include sm {
     font-size: 24px;
   }
+
+  @include xs {
+    margin-bottom: 8px;
+    font-size: 23px;
+  }
 }
 
 .backlink__subtitle {
-  margin: 0 0 38px 0;
+  margin: 0 0 31px 0;
   color: #fcfcfc;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 53.023%;
+  line-height: 120%;
 
   @include lg {
+    margin-bottom: 33px;
     font-size: 16px;
   }
 
   @include sm {
-    margin: 0 0 43px 0;
+    margin: 0 0 38px 0;
+  }
+
+  @include xxs {
+    margin-bottom: 24px;
+    letter-spacing: -0.2px;
   }
 }
 
@@ -256,6 +314,13 @@ body {
 
   @include sm {
     justify-content: space-between;
+  }
+
+  @include xs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 14px;
+    margin-bottom: 23px;
   }
 }
 
@@ -286,6 +351,13 @@ body {
 
   @include sm {
     width: 220px;
+    padding: 14px 25px;
+  }
+
+  @include xs {
+    width: 100%;
+    max-width: 545px;
+    padding: 11px 14px 11px 13px;
   }
 }
 
@@ -325,6 +397,13 @@ body {
     max-width: 214px;
     padding: 17px 55px 15px;
   }
+
+  @include xs {
+    width: 100%;
+    max-width: 545px;
+    flex-grow: unset;
+    padding: 17px 65px 14px;
+  }
 }
 
 .backlink__confirm {
@@ -334,4 +413,9 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 98.023%;
+
+  @include xs {
+    font-size: 13px;
+    letter-spacing: -0.1px;
+  }
 }
