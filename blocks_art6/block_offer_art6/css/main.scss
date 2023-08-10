@@ -42,7 +42,7 @@ body {
     padding: 88px 0;
   }
 
-  @include md {
+  @include sm {
     padding: 59px 0 0 0;
   }
 }
@@ -60,7 +60,7 @@ body {
     max-width: 1054px;
   }
 
-  @include md {
+  @include sm {
     max-width: 960px;
   }
 
@@ -95,7 +95,7 @@ body {
     font-size: 42px;
   }
 
-  @include md {
+  @include sm {
     margin-bottom: 47px;
     font-size: 34px;
   }
@@ -119,8 +119,8 @@ body {
     margin-bottom: 120px;
   }
 
-  @include md {
-    max-width: 56%;
+  @include sm {
+    max-width: 57%;
     grid-template-columns: 1fr;
     gap: 35px 0;
     margin-bottom: 73px;
@@ -133,7 +133,7 @@ body {
   align-items: center;
   gap: 0 29px;
 
-  @include md {
+  @include sm {
     gap: 0 27px;
   }
 }
@@ -157,7 +157,7 @@ body {
     transform: translateY(-5px);
   }
 
-  @include md {
+  @include sm {
     width: 75px;
     height: 75px;
     transform: translateY(0);
@@ -181,7 +181,7 @@ body {
     font-size: 19px;
   }
 
-  @include md {
+  @include sm {
     font-size: 18px;
   }
 }
@@ -200,7 +200,7 @@ body {
     padding: 43px 40px 47px 40px;
   }
 
-  @include md {
+  @include sm {
     width: 100%;
     padding: 37px;
     padding-bottom: 44px;
@@ -220,7 +220,7 @@ body {
     font-size: 26px;
   }
 
-  @include md {
+  @include sm {
     font-size: 24px;
   }
 }
@@ -238,18 +238,24 @@ body {
     font-size: 16px;
   }
 
-  @include md {
+  @include sm {
     margin: 0 0 43px 0;
   }
 }
 
 .backlink__form {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   gap: 25px;
   margin-bottom: 32px;
 
   @include lg {
     gap: 17px;
+  }
+
+  @include sm {
+    justify-content: space-between;
   }
 }
 
@@ -278,7 +284,7 @@ body {
     width: 210px;
   }
 
-  @include md {
+  @include sm {
     width: 220px;
   }
 }
@@ -292,7 +298,7 @@ body {
   font-weight: 500;
   line-height: 98.023%;
 
-  @include md {
+  @include sm {
     font-size: 15px;
   }
 }
@@ -314,8 +320,10 @@ body {
     padding: 17px 49px 15px;
   }
 
-  @include md {
-    padding: 17px 70px 15px;
+  @include sm {
+    flex-grow: 1;
+    max-width: 214px;
+    padding: 17px 55px 15px;
   }
 }
 

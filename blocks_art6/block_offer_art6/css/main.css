@@ -35,12 +35,12 @@ body {
     background-image: url("../images/offer-bg-1366.png");
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .offer {
     padding: 88px 0;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .offer {
     padding: 59px 0 0 0;
   }
@@ -56,12 +56,12 @@ body {
     max-width: 1310px;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .offer__container {
     max-width: 1054px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .offer__container {
     max-width: 960px;
   }
@@ -93,13 +93,13 @@ body {
     font-size: 45px;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .offer__title {
     margin-bottom: 62px;
     font-size: 42px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .offer__title {
     margin-bottom: 47px;
     font-size: 34px;
@@ -120,15 +120,15 @@ body {
     margin-bottom: 93px;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .offer__list {
     gap: 36px 25px;
     margin-bottom: 120px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .offer__list {
-    max-width: 56%;
+    max-width: 57%;
     grid-template-columns: 1fr;
     gap: 35px 0;
     margin-bottom: 73px;
@@ -141,7 +141,7 @@ body {
   align-items: center;
   gap: 0 29px;
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .offer__item {
     gap: 0 27px;
   }
@@ -167,7 +167,7 @@ body {
     transform: translateY(-5px);
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .offer__image {
     width: 75px;
     height: 75px;
@@ -189,12 +189,12 @@ body {
     font-size: 20px;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .offer__text {
     font-size: 19px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .offer__text {
     font-size: 18px;
   }
@@ -212,12 +212,12 @@ body {
     padding: 45px 61px 47px 61px;
   }
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .backlink {
     padding: 43px 40px 47px 40px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .backlink {
     width: 100%;
     padding: 37px;
@@ -234,12 +234,12 @@ body {
   font-weight: 700;
   line-height: 87.023%;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .backlink__title {
     font-size: 26px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .backlink__title {
     font-size: 24px;
   }
@@ -254,12 +254,12 @@ body {
   font-weight: 500;
   line-height: 53.023%;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .backlink__subtitle {
     font-size: 16px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .backlink__subtitle {
     margin: 0 0 43px 0;
   }
@@ -267,12 +267,19 @@ body {
 
 .backlink__form {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   gap: 25px;
   margin-bottom: 32px;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .backlink__form {
     gap: 17px;
+  }
+}
+@media (max-width: 1023px) {
+  .backlink__form {
+    justify-content: space-between;
   }
 }
 
@@ -298,12 +305,12 @@ body {
 .backlink__input:focus {
   border: 1px solid #fcfcfc;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .backlink__input {
     width: 210px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .backlink__input {
     width: 220px;
   }
@@ -327,7 +334,7 @@ body {
   font-weight: 500;
   line-height: 98.023%;
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .backlink__input::-moz-placeholder {
     font-size: 15px;
   }
@@ -350,14 +357,16 @@ body {
   line-height: 98.023%;
   text-transform: uppercase;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1360px) {
   .backlink__submit {
     padding: 17px 49px 15px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 1023px) {
   .backlink__submit {
-    padding: 17px 70px 15px;
+    flex-grow: 1;
+    max-width: 214px;
+    padding: 17px 55px 15px;
   }
 }
 
