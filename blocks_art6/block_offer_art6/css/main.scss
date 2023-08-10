@@ -346,8 +346,9 @@ body {
   background-color: #d75d38;
   border: 1px solid #d75d38;
 
-  &:focus {
-    border: 1px solid #fcfcfc;
+  &::placeholder {
+    display: flex;
+    justify-content: space-between;
   }
 
   @include lg {
@@ -362,7 +363,7 @@ body {
   @include xs {
     width: 100%;
     max-width: 545px;
-    padding: 11px 14px 11px 13px;
+    padding: 13px 14px 13px 13px;
   }
 }
 
@@ -392,6 +393,12 @@ body {
   font-weight: 700;
   line-height: 98.023%;
   text-transform: uppercase;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: #444;
+    color: #fff;
+  }
 
   @include lg {
     padding: 17px 49px 15px;
@@ -407,7 +414,7 @@ body {
     width: 100%;
     max-width: 545px;
     flex-grow: unset;
-    padding: 17px 65px 14px;
+    padding: 17px 65px 15px;
   }
 }
 
@@ -418,6 +425,10 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 98.023%;
+
+  @include sm {
+    line-height: 120%;
+  }
 
   @include xs {
     font-size: 13px;
