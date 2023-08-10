@@ -203,7 +203,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 1599px) {
   .offer__image {
@@ -372,8 +372,8 @@ body {
   border: none;
   outline: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
 }
 
@@ -540,4 +540,15 @@ body {
   }
 }
 
-/* Для того, чтобы убрать картинку рабочего на ширине экрана 767px и менее, необходимо раскомментировать следующий код: */
+/* Для того, чтобы добавить картинку рабочего на ширине экрана 767px и менее, необходимо закомментировать следующий код: */
+@media (max-width: 767px) {
+  .offer__worker {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .offer__list {
+    margin-bottom: 57px;
+  }
+}
