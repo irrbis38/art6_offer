@@ -29,6 +29,7 @@ body {
 .offer {
   padding: 97px 0 96px;
   background: url("../images/offer-bg-1920.png") center / cover no-repeat;
+  overflow: hidden;
 
   & * {
     box-sizing: border-box;
@@ -39,7 +40,7 @@ body {
   }
 
   @include lg {
-    padding: 88px 0;
+    padding: 88px 0 91px;
   }
 
   @include sm {
@@ -146,13 +147,15 @@ body {
   }
 
   @include xs {
-    max-width: 62%;
+    max-width: 83%;
+    // margin-bottom: 26px;
+    margin-bottom: -12px;
   }
 
   @include xxs {
     max-width: 100%;
     gap: 26px 0;
-    margin-bottom: 57px;
+    // margin-bottom: 57px;
     padding: 0 15px;
   }
 }
@@ -250,6 +253,8 @@ body {
   }
 
   @include xs {
+    position: relative;
+    z-index: 2;
     padding: 31px 15px 35px;
   }
 }
@@ -419,3 +424,70 @@ body {
     letter-spacing: -0.1px;
   }
 }
+
+.offer__backlink-wrapper {
+  position: relative;
+}
+
+.offer__worker {
+  position: absolute;
+  bottom: -96px;
+  right: 30px;
+  width: 410px;
+  height: 564px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include xl {
+    width: 385px;
+    height: 529px;
+    right: 10px;
+  }
+
+  @include lg {
+    width: 337px;
+    height: 464px;
+    right: 1px;
+    bottom: -91px;
+  }
+
+  @include r(1060px) {
+    width: 318px;
+    height: 438px;
+  }
+
+  @include sm {
+    width: 285px;
+    height: 394px;
+    bottom: 99%;
+    right: 29px;
+  }
+
+  @include xs {
+    position: relative;
+    width: 214px;
+    height: 295px;
+    bottom: unset;
+    right: unset;
+    transform: translateY(42px);
+    margin: 0 auto;
+  }
+}
+
+/* Для того, чтобы убрать картинку рабочего на ширине экрана 767px и менее, необходимо раскомментировать следующий код: */
+
+// .offer__worker {
+//   @include xs {
+//     display: none;
+//   }
+// }
+
+// .offer__list {
+//   @include xs {
+//     margin-bottom: 57px;
+//   }
+// }

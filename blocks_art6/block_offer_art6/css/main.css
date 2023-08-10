@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-display: swap;
   font-family: "Montserrat";
@@ -26,6 +27,7 @@ body {
 .offer {
   padding: 97px 0 96px;
   background: url("../images/offer-bg-1920.png") center/cover no-repeat;
+  overflow: hidden;
 }
 .offer * {
   box-sizing: border-box;
@@ -37,7 +39,7 @@ body {
 }
 @media (max-width: 1360px) {
   .offer {
-    padding: 88px 0;
+    padding: 88px 0 91px;
   }
 }
 @media (max-width: 1023px) {
@@ -159,14 +161,14 @@ body {
 }
 @media (max-width: 767px) {
   .offer__list {
-    max-width: 62%;
+    max-width: 83%;
+    margin-bottom: -12px;
   }
 }
 @media (max-width: 575px) {
   .offer__list {
     max-width: 100%;
     gap: 26px 0;
-    margin-bottom: 57px;
     padding: 0 15px;
   }
 }
@@ -278,6 +280,8 @@ body {
 }
 @media (max-width: 767px) {
   .backlink {
+    position: relative;
+    z-index: 2;
     padding: 31px 15px 35px;
   }
 }
@@ -478,3 +482,62 @@ body {
     letter-spacing: -0.1px;
   }
 }
+
+.offer__backlink-wrapper {
+  position: relative;
+}
+
+.offer__worker {
+  position: absolute;
+  bottom: -96px;
+  right: 30px;
+  width: 410px;
+  height: 564px;
+}
+.offer__worker img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1599px) {
+  .offer__worker {
+    width: 385px;
+    height: 529px;
+    right: 10px;
+  }
+}
+@media (max-width: 1360px) {
+  .offer__worker {
+    width: 337px;
+    height: 464px;
+    right: 1px;
+    bottom: -91px;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .offer__worker {
+    width: 318px;
+    height: 438px;
+  }
+}
+@media (max-width: 1023px) {
+  .offer__worker {
+    width: 285px;
+    height: 394px;
+    bottom: 99%;
+    right: 29px;
+  }
+}
+@media (max-width: 767px) {
+  .offer__worker {
+    position: relative;
+    width: 214px;
+    height: 295px;
+    bottom: unset;
+    right: unset;
+    transform: translateY(42px);
+    margin: 0 auto;
+  }
+}
+
+/* Для того, чтобы убрать картинку рабочего на ширине экрана 767px и менее, необходимо раскомментировать следующий код: */
